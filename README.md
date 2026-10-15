@@ -39,12 +39,21 @@ O notebook [`analise_exploratoria_olist.ipynb`](analise_exploratoria_olist.ipynb
 - **Estatística descritiva e correlação:** média contra mediana para ticket com cauda longa, e correlação de Pearson (frete × peso = 0,61).
 - **Leitura crítica:** meses incompletos excluídos da tendência, estados com poucos pedidos fora do ranking e a diferença entre associação e causa.
 
-<table>
-  <tr>
-    <td><img src="img/faturamento_mensal.png" alt="Faturamento mensal de jan/2017 a ago/2018"></td>
-    <td><img src="img/atraso_por_estado.png" alt="Taxa de atraso por estado"></td>
-  </tr>
-</table>
+### Faturamento mensal
+
+O faturamento mais que dobrou ao longo de 2017, teve o pico na Black Friday e se estabilizou em 2018.
+
+![Faturamento mensal de jan/2017 a ago/2018](img/faturamento_mensal.png)
+
+### Categorias que concentram a receita
+
+![Top 10 categorias por faturamento](img/top_categorias.png)
+
+### Atraso nas entregas por estado
+
+Em laranja, os estados acima da média nacional de 6,8% de pedidos atrasados.
+
+![Pedidos entregues com atraso por estado](img/atraso_por_estado.png)
 
 ---
 
@@ -55,8 +64,7 @@ O arquivo [`dashboard_ecommerce_olist.pbix`](dashboard_ecommerce_olist.pbix) usa
 1. **Performance de vendas:** faturamento, pedidos, ticket médio, evolução mensal e top 10 categorias.
 2. **Produtos e entregas:** tempo médio de entrega, taxa de atraso por estado e cruzamento de faturamento com prazo por categoria.
 
-![Página de vendas](img/dashboard_vendas.png)
-![Página de produtos e entregas](img/dashboard_logistica.png)
+Para explorar o dashboard, baixe o arquivo `.pbix` e abra no [Power BI Desktop](https://www.microsoft.com/pt-br/power-platform/products/power-bi/desktop) (gratuito).
 
 ---
 
@@ -99,7 +107,7 @@ jupyter notebook analise_exploratoria_olist.ipynb
 ├── analise_exploratoria_olist.ipynb   <- Análise em Python (executada, com resultados)
 ├── dashboard_ecommerce_olist.pbix     <- Dashboard do Power BI
 ├── data/                              <- CSV da Olist (baixar do Kaggle, não versionados)
-├── img/                               <- Gráficos do notebook e capturas do dashboard
+├── img/                               <- Gráficos exportados pelo notebook
 ├── requirements.txt                   <- Bibliotecas Python
 └── README.md
 ```
