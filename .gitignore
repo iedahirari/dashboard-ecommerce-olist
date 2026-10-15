@@ -1,0 +1,11 @@
+# Dados brutos da Olist (baixe do Kaggle, veja data/README.md)
+data/*.csv
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Configuração local do Claude Code
+.claude/
